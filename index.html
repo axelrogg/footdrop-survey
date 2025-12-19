@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blissflare</title>
+        <link href="./style.css" rel="stylesheet">
+        
+    
+    </head>
+    <body class="h-svh bg-slate-50 text-slate-900 antialiased">
+        <nav class="p-6 max-w-4xl mx-auto flex justify-between items-center lg:max-w-full">
+            <div class="font-bold text-2xl">Neurobridge</div>
+        </nav>
+    
+        <main class="flex flex-col items-center justify-center px-6 gap-10 lg:px-[20%]">
+            <section class="flex flex-col items-center justify-center gap-10">
+                <h1 class="text-5xl text-center font-bold">
+                    Foot Drop Research Project
+                </h1>
+                <p class="text-lg text-slate-600 text-center lg:max-w-4xl">
+                    We're collecting real-world data from people around the
+                    world who live with foot drop to guide better engineering
+                    and medical solutions. 
+                </p>
+                <a
+                    href="https://forms.gle/KjAod2eAKUxTiNWo6"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-800 transition shadow-lg"
+                >
+                    Take the survey
+                </a>
+            </section>
+
+            <div class="h-[2px] w-full rounded-full bg-slate-400 lg:w-1/3"></div>
+
+            <section class="flex flex-col items-center justify-center gap-10">
+                <h2 class="text-4xl text-center font-bold">
+                    What is this?
+                </h2>
+                <p class="text-lg text-slate-600 text-center lg:max-w-4xl">
+                    This project collects real-world experiences from people
+                    living with foot drop to better understand its causes,
+                    impact, and current treatment limitations. The goal is to
+                    support research and the development of more effective,
+                    patient-centered solutions.
+                </p>
+                <ul class="list-disc text-lg text-slate-600 px-8">
+                    <li>Takes under 10 minutes.</li>
+                    <li>Completely anonymous.</li>
+                    <li>No medical records required.</li>
+                    <li>Your data will never <span class="font-bold">ever</span> be shared and/or sold.</li>
+                </ul>
+
+            </section>
+
+            <div class="h-[2px] w-full rounded-full bg-slate-400 lg:w-1/3"></div>
+
+            <section class="flex flex-col items-center justify-center gap-10">
+                <h2 class="text-4xl text-center font-bold">
+                    Why this project exists?
+                </h2>
+                <p class="text-lg text-slate-600 text-center lg:max-w-4xl">
+                    I've lived with foot drop for several years and experienced
+                    firsthand how limited and inconsistent current solutions
+                    can be. As an electrical engineering student, I started
+                    exploring whether technology could offer better solutions
+                    than what currently exists.
+                </br>
+                </br>
+                    Then I realized maybe someone else might
+                    benefit from my own solution. But foot drop syndrome
+                    manifests differently depending on the causes. So now I'm
+                    researching how technology can better support people
+                    living with this condition by grounding future work in real
+                    patient experiences. 
+                </p>
+            </section>
+
+            <div class="h-[2px] w-full rounded-full bg-slate-400 lg:w-1/3"></div>
+
+            <section class="flex flex-col items-center justify-center gap-10">
+                <h2 class="text-4xl text-center font-bold">
+                    For clinicians or researchers
+                </h2>
+                <p class="text-lg text-slate-600 text-center lg:max-w-4xl">
+                    If you are a clinician, therapist, or researcher, I would
+                    love to get in touch.
+                </p>
+                <a
+                    href="https://forms.gle/KjAod2eAKUxTiNWo6"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-800 transition shadow-lg"
+                >
+                    Take the survey
+                </a>
+            </section>
+        </main>
+    
+        <footer class="max-w-4xl mx-auto mt-32 p-6 border-t border-slate-200">
+            <p class="text-sm text-slate-500 text-center">Contact me at <a id="rznvy" title="Click to reveal email" class="cursor-pointer font-bold">this email</a></p>
+            <p class="text-sm text-slate-500 text-center">&copy; 2025 Axel Rodríguez Chang</p>
+        </footer>
+    
+    </body>
+    <script>
+        function rot13(str) {
+            return str.replace(/[a-zA-Z]/g, c => {
+              const base = c <= 'Z' ? 65 : 97;
+              return String.fromCharCode(((c.charCodeAt(0) - base + 13) % 26) + base);
+            });
+        }
+
+        let link = document.getElementById("rznvy")
+        let rznvy = "nkryebtt12" + "@" + "tznvy.pbz"
+        let znvygb = "znvygb" + ":" + rznvy
+        link.addEventListener("click", (event) => {
+            event.preventDefault()
+            event.target.textContent = rot13(rznvy)
+            event.target.href = rot13(znvygb)
+        })
+    </script>
+</html>
